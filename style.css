@@ -1,106 +1,172 @@
-html {
-    font-size: 13px;
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+header {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 6px;
 }
 
-.top-container {
+.header-right {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    height: 48px;
-    align-content: center;
-
+    align-items: center;
+    margin: 2px;
 }
 
-.top-container a {
-    padding-left: 15px;
+ul>a {
+    padding: 0 8px;
+}
+
+ul>img {
+    padding: 0 8px;
+}
+
+header > nav > ul > a {
     text-decoration: none;
     color: black;
 }
 
+
+a:hover {
+    text-decoration: underline;
+}
+
+.apps {
+    padding: 8px;
+}
+
 .avatar {
+    padding: 4px;
     height: 32px;
     width: 32px;
     border-radius: 50%;
 }
 
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    display: block;
-   
+.apps:hover {
+    border-radius: 50%;
+    padding: 8px;    
+    background-color: rgba(60,64,67,0.08);
+    opacity: 1;
+    outline: none;
 }
 
-.middle-container {
+.avatar:hover {
+    border-radius: 50%;
+    padding: 4px;    
+    background-color: rgba(60,64,67,0.08);
+    opacity: 1;
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.search-container {
+h1 {
+    font-family: Product Sans;
+    font-size: 5.5em;
+    margin-bottom: 20px;
+}
+
+.google-search {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    width: 561px;
+    border: solid 1px #dfe1e5;
+    border-radius: 25px;
 }
 
-.search-box {
-    min-width: 494px;
-    min-height: 34px;
+.google-search:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.google-search > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
     font-size: 16px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
+.google-search > img {
+    align-self: center;
+    padding: 0px 12px;
 }
 
-.button-search1 {
-    min-width: 93px;
-    min-height: 34px;
-    padding: 0px 16px;
-    border: 1px solid #f8f9fa;
-    margin: 11px 4px;
-    border-radius: 4px;
-    font-size: 14px;
+.search-buttons {
+    padding-top: 18px;
 }
 
-.button-search2 {
-    min-width: 105;
-    min-height: 34px;
-    padding: 0px 16px;
+button {
+    background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
-    margin: 11px 4px;
     border-radius: 4px;
     font-size: 14px;
+    padding: 0px 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    margin: 11px 4px;
 }
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
 
 footer {
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-}
-
-.container-bottom{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    bottom : 0;
     background-color: #f2f2f2;
-    height: 40.5px;
-    flex-wrap: nowrap;
-    padding: 0px 20px 0px 20px;
+    width: 100vw;
+    height: 46px;
+    border-top: 1px solid #dadce0;
+}
+
+footer > nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 7px 0px
+}
+
+footer > nav > ul > a {
+    color: #70757a;
+    text-decoration: none;
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.bottomnav-left a {
-    text-decoration: none;
-    color: #70757a;
-    padding: 15px;
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 15px;
+    margin: 0;
 }
 
-.bottomnav-right a {
-    text-decoration: none;
-    color: #70757a;
-    padding: 15px;
-
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 15px;
+    margin: 0;
 }
