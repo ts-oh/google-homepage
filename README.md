@@ -1,5 +1,1 @@
-First TOP project deconstructing google homepage
-
-Write below what I demonstrated:
-
-Write below my reflection:
+First TOP project re-creating google homepage from scratch
